@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\roy.wassili\\.nuget\\packages\\": {}
+    "/Users/roy/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\roy.wassili\\OneDrive - Gain Automation Technology B.V\\Documenten\\Projects\\assignment_vendingmachine\\assignment_vendingmachine.csproj",
+      "projectUniqueName": "/Users/roy/Documents/Gain projects/assignment_vendingmachine/assignment_vendingmachine.csproj",
       "projectName": "assignment_vendingmachine",
-      "projectPath": "C:\\Users\\roy.wassili\\OneDrive - Gain Automation Technology B.V\\Documenten\\Projects\\assignment_vendingmachine\\assignment_vendingmachine.csproj",
-      "packagesPath": "C:\\Users\\roy.wassili\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\roy.wassili\\OneDrive - Gain Automation Technology B.V\\Documenten\\Projects\\assignment_vendingmachine\\obj\\",
+      "projectPath": "/Users/roy/Documents/Gain projects/assignment_vendingmachine/assignment_vendingmachine.csproj",
+      "packagesPath": "/Users/roy/.nuget/packages/",
+      "outputPath": "/Users/roy/Documents/Gain projects/assignment_vendingmachine/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\roy.wassili\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/roy/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
       }
     }
   }

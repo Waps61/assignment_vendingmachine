@@ -14,11 +14,14 @@ namespace assigment_vendingmachine
 
     static void Main(string[] args)
     {
+      string selected="";
       Console.WriteLine("Welcome to VendingMachine V "+ version);
       Console.WriteLine(myProductSelector.showKeyboard());
       Console.WriteLine(myStockMananger.showStock());
       Console.WriteLine("Select a product...");
-      Console.WriteLine("Selected : "+myProductSelector.readSelection());
+      selected=myProductSelector.readSelection();
+      Console.WriteLine("Selected : "+selected);
+      Console.WriteLine( "Selected product :" + myStockMananger.getSelectedProductName(selected));
     }
   }
 }
