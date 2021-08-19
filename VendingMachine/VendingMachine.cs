@@ -19,8 +19,40 @@ namespace assigment_vendingmachine
             Console.WriteLine("Welcome to VendingMachine V " + version);
             Console.WriteLine(productSelector.ShowKeyboard());
             Console.WriteLine(stockManager.ShowStock());
-            Console.WriteLine("Select a product...");
-            Console.WriteLine("Selected : " + productSelector.ReadSelection());
+            while (true)
+            {
+                if (!TryReadProductLocation(out string location))
+                    continue;
+
+
+                if (stockManager.HasProduct(location))
+                {
+                    var product = stockManager.GetProductInformation(location);
+                    Console.WriteLine($"Selected Product: {product.Name}");
+                    Console.WriteLine($"Please pay ${product.Price}");
+                }
+                else
+                {
+                    Console.WriteLine($"No product available on {location}");
+                }
+            }
+        }
+
+        private bool TryReadProductLocation(out string location)
+        {
+            Console.Write("Select a product: ");
+            try
+            {
+                location = productSelector.ReadSelection();
+                Console.WriteLine("Selected : " + location);
+                return true;
+            }
+            catch
+            {
+                location = null;
+                Console.WriteLine($"That is not a valid input.");
+                return false;
+            }
         }
     }
 }
