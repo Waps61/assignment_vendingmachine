@@ -3,7 +3,7 @@ using System.Text.RegularExpressions;
 
 namespace assigment_vendingmachine
 {
-    public class ProductSelector : IProductSelector
+    public class ProductSelectorWithButtons : IProductSelector
     {
         public string ShowKeyboard()
             => "[ A ] [ B ] [ 1 ] [ 2 ] [ 3 ] \n" +

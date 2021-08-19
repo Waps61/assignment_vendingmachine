@@ -16,7 +16,7 @@ namespace assigment_vendingmachine
         }
         public void Start()
         {
-            Console.WriteLine("Welcome to VendingMachine V " + version);
+            Console.WriteLine("Welcome to VendingMachine V" + version);
             Console.WriteLine(productSelector.ShowKeyboard());
             Console.WriteLine(stockManager.ShowStock());
             while (true)
