@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace assignment_vendingmachine
+namespace assignment_vendingmachine.StockManagement
 {
     public class StockManager : IStockManager
     {

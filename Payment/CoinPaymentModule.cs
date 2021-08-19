@@ -1,6 +1,6 @@
 using System;
 
-namespace assignment_vendingmachine
+namespace assignment_vendingmachine.Payment
 {
     public class CoinPaymentModule : IPaymentModule
     {

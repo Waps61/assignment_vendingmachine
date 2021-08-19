@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace assignment_vendingmachine
+namespace assignment_vendingmachine.Outfeed
 {
     public class SimpleDispenser : IOutfeedModule
     {
@@ -10,7 +10,7 @@ namespace assignment_vendingmachine
             Console.Write($"Feeding out product {location}");
             for(int k = 0; k < 3; k++)
             {
-                Thread.Sleep(1000);
+                Thread.Sleep(500);
                 Console.Write(".");
             }
 
