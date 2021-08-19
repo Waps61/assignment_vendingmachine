@@ -6,7 +6,8 @@ namespace assigment_vendingmachine
         {
             var productSelector = new ProductSelectorWithVoice();
             var stockManager = new StockManager();
-            var vendingMachine = new VendingMachine(productSelector, stockManager);
+            var paymentModule = new CoinPaymentModule();
+            var vendingMachine = new VendingMachine(productSelector, stockManager, paymentModule);
 
             vendingMachine.Start();
         }

@@ -8,11 +8,13 @@ namespace assigment_vendingmachine
 
         private readonly IProductSelector productSelector;
         private readonly IStockManager stockManager;
+        private readonly IPaymentModule paymentModule;
 
-        public VendingMachine(IProductSelector productSelector, IStockManager stockManager)
+        public VendingMachine(IProductSelector productSelector, IStockManager stockManager, IPaymentModule paymentModule)
         {
             this.productSelector = productSelector;
             this.stockManager = stockManager;
+            this.paymentModule = paymentModule;
         }
         public void Start()
         {
@@ -25,16 +27,21 @@ namespace assigment_vendingmachine
                     continue;
 
 
-                if (stockManager.HasProduct(location))
-                {
-                    var product = stockManager.GetProductInformation(location);
-                    Console.WriteLine($"Selected Product: {product.Name}");
-                    Console.WriteLine($"Please pay ${product.Price}");
-                }
-                else
+                if (!stockManager.HasProduct(location))
                 {
                     Console.WriteLine($"No product available on {location}");
+                    continue;
                 }
+
+                var product = stockManager.GetProductInformation(location);
+                Console.WriteLine($"Selected Product: {product.Name}");
+                if(!paymentModule.StartTransaction(product.Price))
+                {
+                    Console.WriteLine("Transaction cancelled.");
+                    continue;
+                }
+
+                Console.WriteLine("Successfully paid!");
             }
         }
 
