@@ -2,16 +2,6 @@
 
 namespace assigment_vendingmachine
 {
-    public interface IProductSelector
-    {
-        string ShowKeyboard();
-        string ReadSelection();
-    }
-    public interface IStockManager
-    {
-        string ShowStock();
-    }
-
     public class VendingMachine
     {
         private static readonly string version = "0.1";
