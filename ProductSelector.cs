@@ -2,7 +2,7 @@ using System;
 
 namespace assigment_vendingmachine
 {
-    public class ProductSelector
+    public class ProductSelector : IProductSelector
     {
         private static Button[,] kbdLayout = { {new Button("A"),new Button("B"),new Button("1"),new Button("2"),new Button("3")},
                               {new Button("C"),new Button("D"),new Button("4"),new Button("5"),new Button("6")},
@@ -13,22 +13,11 @@ namespace assigment_vendingmachine
 
         static ConsoleKeyInfo cki = new ConsoleKeyInfo();
 
-        public ProductSelector()
-        {
-        }
+        public string ShowKeyboard()
+            => myKeyboard.ToString();
 
-        public string showKeyboard()
-        {
-            return myKeyboard.ToString();
 
-        }
-
-        private static bool validKey(Button obj)
-        {
-            return obj.GetbtnValue() == "" + cki.KeyChar;
-        }
-
-        public string readSelection()
+        public string ReadSelection()
         {
             string selection = "";
 
@@ -45,5 +34,7 @@ namespace assigment_vendingmachine
             } while (cki.Key != ConsoleKey.Enter && cki.Key != ConsoleKey.Escape);
             return selection;
         }
+        private static bool validKey(Button obj)
+            => obj.GetbtnValue() == "" + cki.KeyChar;
     }
 }

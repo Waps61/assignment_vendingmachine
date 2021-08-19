@@ -2,14 +2,19 @@
 
 namespace assigment_vendingmachine
 {
+    public interface IProductSelector
+    {
+        string ShowKeyboard();
+        string ReadSelection();
+    }
     public class VendingMachine
     {
         private static readonly string version = "0.1";
 
        
-        private readonly ProductSelector productSelector;
+        private readonly IProductSelector productSelector;
         private readonly StockManager stockManager;
-        public VendingMachine(ProductSelector productSelector, StockManager stockManager)
+        public VendingMachine(IProductSelector productSelector, StockManager stockManager)
         {
             this.productSelector = productSelector;
             this.stockManager = stockManager;
@@ -17,10 +22,10 @@ namespace assigment_vendingmachine
         public void Start()
         {
             Console.WriteLine("Welcome to VendingMachine V " + version);
-            Console.WriteLine(productSelector.showKeyboard());
+            Console.WriteLine(productSelector.ShowKeyboard());
             Console.WriteLine(stockManager.showStock());
             Console.WriteLine("Select a product...");
-            Console.WriteLine("Selected : " + productSelector.readSelection());
+            Console.WriteLine("Selected : " + productSelector.ReadSelection());
         }
     }
 }
