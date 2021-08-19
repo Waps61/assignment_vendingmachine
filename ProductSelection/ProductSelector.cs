@@ -1,40 +1,24 @@
 using System;
+using System.Text.RegularExpressions;
 
 namespace assigment_vendingmachine
 {
     public class ProductSelector : IProductSelector
     {
-        private static Button[,] kbdLayout = { {new Button("A"),new Button("B"),new Button("1"),new Button("2"),new Button("3")},
-                              {new Button("C"),new Button("D"),new Button("4"),new Button("5"),new Button("6")},
-                              {new Button("E"),new Button("F"),new Button("7"),new Button("8"),new Button("9")},
-                              {new Button("OK"),new Button("Cancel"),new Button(""),new Button(""),new Button("")}
-                            };
-        private static Keyboard myKeyboard = new Keyboard(kbdLayout);
-
-        static ConsoleKeyInfo cki = new ConsoleKeyInfo();
-
         public string ShowKeyboard()
-            => myKeyboard.ToString();
-
+            => "[ A ] [ B ] [ 1 ] [ 2 ] [ 3 ] \n" +
+               "[ C ] [ D ] [ 4 ] [ 5 ] [ 7 ] \n" +
+               "[ E ] [ F ] [ 7 ] [ 8 ] [ 9 ]";
 
         public string ReadSelection()
         {
-            string selection = "";
+            var line = Console.ReadLine();
 
-            Console.TreatControlCAsInput = true;
-            do
-            {
-                cki = Console.ReadKey();
-                Predicate<Button> b = validKey;
-                if (cki.Key != ConsoleKey.Enter)// && Array.Find(kbdLayout, b))
-                    selection += cki.KeyChar;
+            var regex = new Regex(@"([A-F])([1-9])");
+            if (!regex.IsMatch(line))
+                throw new Exception($"Invalid input!");
 
-
-                //Console.Write(cki.Key.ToString());
-            } while (cki.Key != ConsoleKey.Enter && cki.Key != ConsoleKey.Escape);
-            return selection;
+            return line;
         }
-        private static bool validKey(Button obj)
-            => obj.GetbtnValue() == "" + cki.KeyChar;
     }
 }
