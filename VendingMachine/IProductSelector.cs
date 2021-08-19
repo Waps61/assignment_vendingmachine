@@ -2,7 +2,7 @@
 {
     public interface IProductSelector
     {
-        string ShowKeyboard();
+        string ShowInterface();
         string ReadSelection();
     }
 }

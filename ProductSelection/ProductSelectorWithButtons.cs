@@ -5,7 +5,7 @@ namespace assigment_vendingmachine
 {
     public class ProductSelectorWithButtons : IProductSelector
     {
-        public string ShowKeyboard()
+        public string ShowInterface()
             => "[ A ] [ B ] [ 1 ] [ 2 ] [ 3 ] \n" +
                "[ C ] [ D ] [ 4 ] [ 5 ] [ 7 ] \n" +
                "[ E ] [ F ] [ 7 ] [ 8 ] [ 9 ]";
