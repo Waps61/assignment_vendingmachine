@@ -3,14 +3,14 @@ using System.Text.RegularExpressions;
 
 namespace assigment_vendingmachine
 {
-    public class ProductSelectorWithScreen : IProductSelector
+    public class ProductSelectorWithVoice : IProductSelector
     {
         public string ShowInterface()
             => "|------------------------------------|\n" +
                "| Gain Vending Machine               |\n" +
-               "| [ A ] [ B ] [ 1 ] [ 2 ] [ 3 ]      |\n" +
-               "| [ C ] [ D ] [ 4 ] [ 5 ] [ 7 ]      |\n" +
-               "| [ E ] [ F ] [ 7 ] [ 8 ] [ 9 ]      |\n" +
+               "| This machine is voice operated,    |\n" +
+               "| please state your selection loud   |\n" +
+               "| and clear!                         |\n" +
                "|------------------------------------|";
 
         public string ReadSelection()

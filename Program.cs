@@ -4,7 +4,7 @@ namespace assigment_vendingmachine
     {
         static void Main(string[] args)
         {
-            var productSelector = new ProductSelectorWithButtons();
+            var productSelector = new ProductSelectorWithVoice();
             var stockManager = new StockManager();
             var vendingMachine = new VendingMachine(productSelector, stockManager);
 
