@@ -1,3 +1,7 @@
+/* Copyright © 2021 Gain Automation Technology
+* This class represents a keyboard for selecting products in the vending machine.
+* This object lives in the control layer.
+*/
 using System;
 
 namespace assigment_vendingmachine
