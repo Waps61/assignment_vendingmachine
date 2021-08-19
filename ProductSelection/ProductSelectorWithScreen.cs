@@ -1,7 +1,7 @@
 using System;
 using System.Text.RegularExpressions;
 
-namespace assigment_vendingmachine
+namespace assignment_vendingmachine
 {
     public class ProductSelectorWithScreen : IProductSelector
     {

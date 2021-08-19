@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace assigment_vendingmachine
+namespace assignment_vendingmachine
 {
     public class StockManager : IStockManager
     {
@@ -79,7 +79,8 @@ namespace assigment_vendingmachine
 
         public void NotifyProductTaken(string location)
         {
-            throw new NotImplementedException();
+            var entry = FindStockEntry(location);
+            entry.NotifyProductRemoved();
         }
     }
 }

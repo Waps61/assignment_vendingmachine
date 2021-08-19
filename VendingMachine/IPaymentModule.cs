@@ -1,4 +1,4 @@
-﻿namespace assigment_vendingmachine
+﻿namespace assignment_vendingmachine
 {
     public interface IPaymentModule
     {

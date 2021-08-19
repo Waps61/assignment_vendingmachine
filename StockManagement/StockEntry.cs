@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace assigment_vendingmachine
+namespace assignment_vendingmachine
 {
     internal class StockEntry
     {

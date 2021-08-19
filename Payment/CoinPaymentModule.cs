@@ -1,7 +1,6 @@
 using System;
-using System.Threading;
 
-namespace assigment_vendingmachine
+namespace assignment_vendingmachine
 {
     public class CoinPaymentModule : IPaymentModule
     {

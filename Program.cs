@@ -1,4 +1,4 @@
-namespace assigment_vendingmachine
+namespace assignment_vendingmachine
 {
     class Program
     {
@@ -7,9 +7,10 @@ namespace assigment_vendingmachine
             var productSelector = new ProductSelectorWithVoice();
             var stockManager = new StockManager();
             var paymentModule = new CoinPaymentModule();
-            var vendingMachine = new VendingMachine(productSelector, stockManager, paymentModule);
+            var outfeedModule = new SimpleDispenser();
+            var vendingMachine = new VendingMachine(productSelector, stockManager, paymentModule, outfeedModule);
 
-            vendingMachine.Start();
+            vendingMachine.Run();
         }
     }
 }
