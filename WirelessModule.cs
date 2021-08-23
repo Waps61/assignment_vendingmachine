@@ -13,13 +13,29 @@ namespace assigment_vendingmachine
 
     public WirelessModule()
     {
+      myPayment = new WirelessPayment();
 
     }
 
 
-    public  override bool startTransaction(int amount)
+    public override bool startTransaction(int amount)
     {
-      return false;
+      Console.WriteLine("Place your wallet in front of the reader..... press enter when done");
+      ConsoleKeyInfo cki = new ConsoleKeyInfo();
+      Console.TreatControlCAsInput = true;
+      do
+      {
+        cki = Console.ReadKey();
+
+
+
+      } while (cki.Key != ConsoleKey.Enter);
+      if (myPayment.validatePayment(amount))
+      {
+        Console.WriteLine("Paymwntr accepted:\nWait while fetching product....");
+        return true;
+      }
+      else return false;
     }
   }
 }

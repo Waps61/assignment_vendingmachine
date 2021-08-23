@@ -5,7 +5,7 @@ namespace assigment_vendingmachine
 
   class VendingMachine
   {
-    static string version = "0.2";
+    static string version = "1.0";
 
     static ProductSelector myProductSelector = new ProductSelector();
     static StockManager myStockMananger = new StockManager();
@@ -32,39 +32,40 @@ namespace assigment_vendingmachine
         Console.WriteLine("Press C or W to continue");
         ConsoleKeyInfo t_cki = new ConsoleKeyInfo();
         Console.TreatControlCAsInput = true;
-        char choice = '\0';
+        char choice;
+        string t = "";
         do
         {
           t_cki = Console.ReadKey();
 
-          choice = Char.ToUpper(t_cki.KeyChar);
+          choice = t_cki.KeyChar;
+          t = "" + (Char.ToUpper(choice));
 
-        } while (t_cki.Key != ConsoleKey.Enter);
-        switch (choice)
+        } while (t[0] != 'W' && t[0] != 'C');
+        if (t == "C")
         {
-          case 'C':
-            CoinModule myCoinModule = new CoinModule();
-            if (myCoinModule.startTransaction(myStockMananger.getSelectedProductPrice(selected)))
+
+          CoinModule myCoinModule = new CoinModule();
+          if (myCoinModule.startTransaction(myStockMananger.getSelectedProductPrice(selected)))
+          {
+            if (myDispencer.fetchProduct(myStockMananger.getProductPosition()))
             {
-              if (myDispencer.fetchProduct(myStockMananger.getProductPosition()))
-              {
-                Console.WriteLine("Here you go/n Enjoy your {s}", myStockMananger.getSelectedProductName(selected));
-              }
+              Console.WriteLine("Here you go/n Enjoy your "+ myStockMananger.getSelectedProductName(selected));
             }
-            break;
-          case 'W':
-            WirelessModule myWirelessModule = new WirelessModule();
-            if (myWirelessModule.startTransaction(myStockMananger.getSelectedProductPrice(selected)))
-            {
-              if (myDispencer.fetchProduct(myStockMananger.getProductPosition()))
-              {
-                Console.WriteLine("Here you go/n Enjoy your {s}", myStockMananger.getSelectedProductName(selected));
-              }
-            }
-            break;
-          default:
-            break;
+          }
         }
+        if (t == "W")
+        {
+          WirelessModule myWirelessModule = new WirelessModule();
+          if (myWirelessModule.startTransaction(myStockMananger.getSelectedProductPrice(selected)))
+          {
+            if (myDispencer.fetchProduct(myStockMananger.getProductPosition()))
+            {
+              Console.WriteLine("Here you go/n Enjoy your "+ myStockMananger.getSelectedProductName(selected));
+            }
+          }
+        }
+
       }
       else Console.WriteLine("Your selected product is invalid or out of stock!");
 

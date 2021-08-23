@@ -13,7 +13,7 @@ namespace assigment_vendingmachine
 
     public CoinModule()
     {
-myPayment = new CoinPayment();
+      myPayment = new CoinPayment();
     }
 
 
@@ -21,21 +21,20 @@ myPayment = new CoinPayment();
     {
       Console.WriteLine("Insert coins..... press enter when done");
       ConsoleKeyInfo cki = new ConsoleKeyInfo();
-        Console.TreatControlCAsInput = true;
-        do
-        {
-          
+      Console.TreatControlCAsInput = true;
+      do
+      {
+        cki = Console.ReadKey();
 
 
 
-        } while (cki.Key!= ConsoleKey.Enter);
-        if( myPayment.validatePayment( amount )){
-          Console.WriteLine("Wait while fetching product....");
-
-        }
-      
-
-      return false;
+      } while (cki.Key != ConsoleKey.Enter);
+      if (myPayment.validatePayment(amount))
+      {
+        Console.WriteLine("Payment accepted.\nWait while fetching product....");
+        return true;
+      }
+      else return false;
     }
   }
 }
