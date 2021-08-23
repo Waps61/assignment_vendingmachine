@@ -58,8 +58,8 @@ namespace assigment_vendingmachine
       }
       catch (Exception e)
       {
-        Console.WriteLine("INvalid product exception");
-        return false;
+        throw new ArgumentOutOfRangeException("INvalid product exception", e);
+
       }
 
     }
@@ -79,7 +79,8 @@ namespace assigment_vendingmachine
       return stock[productPosition[ROW, 0], productPosition[0, COL]].Name;
     }
 
-    public int[,] getProductPosition(){
+    public int[,] getProductPosition()
+    {
       return productPosition;
     }
   }
