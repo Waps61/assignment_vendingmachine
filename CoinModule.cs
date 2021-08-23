@@ -13,12 +13,28 @@ namespace assigment_vendingmachine
 
     public CoinModule()
     {
-
+myPayment = new CoinPayment();
     }
 
 
     public override bool startTransaction(int amount)
     {
+      Console.WriteLine("Insert coins..... press enter when done");
+      ConsoleKeyInfo cki = new ConsoleKeyInfo();
+        Console.TreatControlCAsInput = true;
+        do
+        {
+          
+
+
+
+        } while (cki.Key!= ConsoleKey.Enter);
+        if( myPayment.validatePayment( amount )){
+          Console.WriteLine("Wait while fetching product....");
+
+        }
+      
+
       return false;
     }
   }

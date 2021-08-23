@@ -9,5 +9,10 @@ namespace assigment_vendingmachine
     public Motor()
     {
     }
+
+    public void move(int pos)
+    {
+      // do what motor have to do here
+    }
   }
 }

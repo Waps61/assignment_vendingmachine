@@ -1,19 +1,3 @@
-C:/Users/roy.wassili/OneDrive - Gain Automation Technology B.V/Documenten/Projects/assignment_vendingmachine/bin/Debug/net5.0/assignment_vendingmachine.exe
-C:/Users/roy.wassili/OneDrive - Gain Automation Technology B.V/Documenten/Projects/assignment_vendingmachine/bin/Debug/net5.0/assignment_vendingmachine.deps.json
-C:/Users/roy.wassili/OneDrive - Gain Automation Technology B.V/Documenten/Projects/assignment_vendingmachine/bin/Debug/net5.0/assignment_vendingmachine.runtimeconfig.json
-C:/Users/roy.wassili/OneDrive - Gain Automation Technology B.V/Documenten/Projects/assignment_vendingmachine/bin/Debug/net5.0/assignment_vendingmachine.runtimeconfig.dev.json
-C:/Users/roy.wassili/OneDrive - Gain Automation Technology B.V/Documenten/Projects/assignment_vendingmachine/bin/Debug/net5.0/assignment_vendingmachine.dll
-C:/Users/roy.wassili/OneDrive - Gain Automation Technology B.V/Documenten/Projects/assignment_vendingmachine/bin/Debug/net5.0/ref/assignment_vendingmachine.dll
-C:/Users/roy.wassili/OneDrive - Gain Automation Technology B.V/Documenten/Projects/assignment_vendingmachine/bin/Debug/net5.0/assignment_vendingmachine.pdb
-C:/Users/roy.wassili/OneDrive - Gain Automation Technology B.V/Documenten/Projects/assignment_vendingmachine/obj/Debug/net5.0/assignment_vendingmachine.csproj.AssemblyReference.cache
-C:/Users/roy.wassili/OneDrive - Gain Automation Technology B.V/Documenten/Projects/assignment_vendingmachine/obj/Debug/net5.0/assignment_vendingmachine.GeneratedMSBuildEditorConfig.editorconfig
-C:/Users/roy.wassili/OneDrive - Gain Automation Technology B.V/Documenten/Projects/assignment_vendingmachine/obj/Debug/net5.0/assignment_vendingmachine.AssemblyInfoInputs.cache
-C:/Users/roy.wassili/OneDrive - Gain Automation Technology B.V/Documenten/Projects/assignment_vendingmachine/obj/Debug/net5.0/assignment_vendingmachine.AssemblyInfo.cs
-C:/Users/roy.wassili/OneDrive - Gain Automation Technology B.V/Documenten/Projects/assignment_vendingmachine/obj/Debug/net5.0/assignment_vendingmachine.csproj.CoreCompileInputs.cache
-C:/Users/roy.wassili/OneDrive - Gain Automation Technology B.V/Documenten/Projects/assignment_vendingmachine/obj/Debug/net5.0/assignment_vendingmachine.dll
-C:/Users/roy.wassili/OneDrive - Gain Automation Technology B.V/Documenten/Projects/assignment_vendingmachine/obj/Debug/net5.0/ref/assignment_vendingmachine.dll
-C:/Users/roy.wassili/OneDrive - Gain Automation Technology B.V/Documenten/Projects/assignment_vendingmachine/obj/Debug/net5.0/assignment_vendingmachine.pdb
-C:/Users/roy.wassili/OneDrive - Gain Automation Technology B.V/Documenten/Projects/assignment_vendingmachine/obj/Debug/net5.0/assignment_vendingmachine.genruntimeconfig.cache
 /Users/roy/Documents/Gain projects/assignment_vendingmachine/obj/Debug/net5.0/assignment_vendingmachine.pdb
 /Users/roy/Documents/Gain projects/assignment_vendingmachine/obj/Debug/net5.0/assignment_vendingmachine.csproj.AssemblyReference.cache
 /Users/roy/Documents/Gain projects/assignment_vendingmachine/obj/Debug/net5.0/assignment_vendingmachine.GeneratedMSBuildEditorConfig.editorconfig
@@ -29,3 +13,19 @@ C:/Users/roy.wassili/OneDrive - Gain Automation Technology B.V/Documenten/Projec
 /Users/roy/Documents/Gain projects/assignment_vendingmachine/bin/Debug/net5.0/ref/assignment_vendingmachine.dll
 /Users/roy/Documents/Gain projects/assignment_vendingmachine/bin/Debug/net5.0/assignment_vendingmachine.pdb
 /Users/roy/Documents/Gain projects/assignment_vendingmachine/obj/Debug/net5.0/assignment_vendingmachine.genruntimeconfig.cache
+C:\Users\roy.wassili\OneDrive - Gain Automation Technology B.V\Documenten\Projects\assignment_vendingmachine\bin\Debug\net5.0\assignment_vendingmachine.exe
+C:\Users\roy.wassili\OneDrive - Gain Automation Technology B.V\Documenten\Projects\assignment_vendingmachine\bin\Debug\net5.0\assignment_vendingmachine.deps.json
+C:\Users\roy.wassili\OneDrive - Gain Automation Technology B.V\Documenten\Projects\assignment_vendingmachine\bin\Debug\net5.0\assignment_vendingmachine.runtimeconfig.json
+C:\Users\roy.wassili\OneDrive - Gain Automation Technology B.V\Documenten\Projects\assignment_vendingmachine\bin\Debug\net5.0\assignment_vendingmachine.runtimeconfig.dev.json
+C:\Users\roy.wassili\OneDrive - Gain Automation Technology B.V\Documenten\Projects\assignment_vendingmachine\bin\Debug\net5.0\assignment_vendingmachine.dll
+C:\Users\roy.wassili\OneDrive - Gain Automation Technology B.V\Documenten\Projects\assignment_vendingmachine\bin\Debug\net5.0\ref\assignment_vendingmachine.dll
+C:\Users\roy.wassili\OneDrive - Gain Automation Technology B.V\Documenten\Projects\assignment_vendingmachine\bin\Debug\net5.0\assignment_vendingmachine.pdb
+C:\Users\roy.wassili\OneDrive - Gain Automation Technology B.V\Documenten\Projects\assignment_vendingmachine\obj\Debug\net5.0\assignment_vendingmachine.csproj.AssemblyReference.cache
+C:\Users\roy.wassili\OneDrive - Gain Automation Technology B.V\Documenten\Projects\assignment_vendingmachine\obj\Debug\net5.0\assignment_vendingmachine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\roy.wassili\OneDrive - Gain Automation Technology B.V\Documenten\Projects\assignment_vendingmachine\obj\Debug\net5.0\assignment_vendingmachine.AssemblyInfoInputs.cache
+C:\Users\roy.wassili\OneDrive - Gain Automation Technology B.V\Documenten\Projects\assignment_vendingmachine\obj\Debug\net5.0\assignment_vendingmachine.AssemblyInfo.cs
+C:\Users\roy.wassili\OneDrive - Gain Automation Technology B.V\Documenten\Projects\assignment_vendingmachine\obj\Debug\net5.0\assignment_vendingmachine.csproj.CoreCompileInputs.cache
+C:\Users\roy.wassili\OneDrive - Gain Automation Technology B.V\Documenten\Projects\assignment_vendingmachine\obj\Debug\net5.0\assignment_vendingmachine.dll
+C:\Users\roy.wassili\OneDrive - Gain Automation Technology B.V\Documenten\Projects\assignment_vendingmachine\obj\Debug\net5.0\ref\assignment_vendingmachine.dll
+C:\Users\roy.wassili\OneDrive - Gain Automation Technology B.V\Documenten\Projects\assignment_vendingmachine\obj\Debug\net5.0\assignment_vendingmachine.pdb
+C:\Users\roy.wassili\OneDrive - Gain Automation Technology B.V\Documenten\Projects\assignment_vendingmachine\obj\Debug\net5.0\assignment_vendingmachine.genruntimeconfig.cache
